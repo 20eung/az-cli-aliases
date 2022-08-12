@@ -21,3 +21,18 @@ alias az-er-sec-route-sum='az network express-route list-route-tables-summary -n
 alias az-hub-ko-route='az network vhub get-effective-routes --resource-type VpnConnection --resource-id ${KO_RT_ID} -n ${KO_HUB} -g ${RG} -o table | tail -n+3 | awk -F"/s" "{print \$1} END{print \"Total Routes:\",NR}"'
 ```
 
+> $ az-er-pri-arp
+
+![az-er-pri-arp](./az-er-pri-arp.png "az-er-pri-arp")
+
+> $ az-er-pri-route
+
+![az-er-pri-route](./az-er-pri-route.png "az-er-pri-route")
+
+> $ az-er-pri-route-sum
+
+![az-er-pri-route-sum](./az-er-pri-route-sum.png "az-er-pri-route-sum")
+
+> $ az-hub-hk-route
+
+![az-hub-hk-route](./az-hub-hk-route.png "az-hub-hk-route")
